@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% block main %} 
+{{super()}} 
+<div class = "grid-container">
+    <div class = "header">
+        <header>
+        <link rel ="stylesheet", href="{{url_for('static', filename='css/app.css')}}">
+        <img src="{{url_for('static', filename='kingkai.jpg')}} "/>
+        <h1>Bradley Henry</h1>
+        <p>@Shadowkey</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined Feburary, 2022</p>
+    </header>
+    </div>
+
+    <main class="secondhalf">
+    <p>My name is Bradley Henry and I am a third-year university student; studying with a major in Education with the focus of Information Technology/ Computer Science. Writing is my passion, but I do have a love for web development and wish to learn more about it.</p>
+    <p><b>7       100        250 </b></p>
+    <p>  Post   Following  Followers</p>
+    <button class="button">Follow</button>
+    </main>
+</div>
+
+
+{% endblock %} 

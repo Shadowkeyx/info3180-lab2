@@ -24,6 +24,15 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
+
+def format_date_joined():
+    from datetime import date
+    today = date.today()
+    fdate = date.today().strftime('%B:%Y')
+    print("Joined:", fdate)
 
 ###
 # The functions below should be applicable to all Flask apps.
